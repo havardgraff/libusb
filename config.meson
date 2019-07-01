@@ -1,0 +1,18 @@
+#mesondefine HAVE_MISSING_H
+#mesondefine HAVE_ASM_TYPES_H
+#mesondefine HAVE_SYS_TIME_H
+#mesondefine HAVE_SYS_TYPES_H
+#mesondefine HAVE_SYSLOG_H
+#mesondefine HAVE_STRINGS_H
+#mesondefine HAVE_POLL_H
+
+#mesondefine THREADS_POSIX
+
+#define POLL_NFDS_TYPE @POLL_NFDS_TYPE@
+#define OS_@OS@ 1
+#define DEFAULT_VISIBILITY
+
+#ifdef HAVE_ASM_TYPES_H
+#include <asm/types.h>
+#endif
+#include <sys/socket.h>
